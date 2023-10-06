@@ -1,3 +1,5 @@
+
+
 :root {
     --branco-principal: #FFFFFF;
     --cinza-secundário: #C0C0C0;
@@ -16,12 +18,14 @@ body  {
     margin: 0;
     padding: 0;
 }
-.principal {
+.container__principal {
     background-image: url("Background.png");
     background-repeat: no-repeat;
     background-size: contain;
+    align-items: center;
+    text-align: center;
 }
-.container {
+.container__principal {
     height: 100vh;
     display: grid;
     grid-template-columns: 50% 50%;
@@ -53,3 +57,26 @@ body  {
 .container__caixa{
     margin: 0 6em;
 }
+.secundario__imagem{
+    width: 60%;
+}
+.container__secundario {
+    align-items: center;
+    margin: 0 10em;
+    grid-template-columns: 50% 50%;
+    display: grid;
+   
+   
+}
+.descricao__titulo{
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--branco-principal);
+    margin-bottom: 0.1em;
+}
+.descricao__texto{
+    color: var(--cinza-secundario);
+   
+}
+
+
